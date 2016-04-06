@@ -6,7 +6,7 @@ d='https://anonscm.debian.org/gitweb/?p=d-i/debootstrap.git;a=snapshot;h=HEAD;sf
 if ! wget -O- --no-verbose --timeout=60 -t2 "$d"  \
         | tar -C "$tmp" --strip-components=1 -zx 2>/dev/null; then
     echo 'Download from Debian gitweb failed. Trying latest release...' 1>&2
-    d='http://httpredir.debian.org/debian/pool/main/d/debootstrap/'
+    d='http://ftp.debian.org/debian/pool/main/d/debootstrap/'
     f="`wget -O- --no-verbose --timeout=60 -t2 "$d" \
             | sed -ne 's ^.*\(debootstrap_[0-9.]*.tar.gz\).*$ \1 p' \
             | tail -n 1`"
@@ -17,8 +17,5 @@ Check your internet connection or proxy settings and try again.'
     v="${f#*_}"
     v="${v%.tar.gz}"
     echo "Downloading debootstrap version $v..." 1>&2
-    if ! wget -O- --no-verbose --timeout=60 -t2 "$d$f" \
-            | tar -C "$tmp" --strip-components=1 -zx 2>/dev/null; then
-        error 1 'Failed to download debootstrap.'
-    fi
+    wget -O debootstrap.tar.gz --no-verbose --timeout=60 -t2 "$d$f" 
 fi
