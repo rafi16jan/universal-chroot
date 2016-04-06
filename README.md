@@ -47,7 +47,7 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/deboots
 sh debootstrap.sh
 tar xvf debootstrap.tar.gz
 mkdir /usr/share/debootstrap
-cp debian-*/debootstrap /usr/local/bin/ #or can be your another favorite dir directory
+cp debian-*/debootstrap /usr/local/bin/ #or can be your another favorite bin directory
 cp debian-*/functions /usr/share/debootstrap/
 cp -r debian-*/scripts /usr/share/debootstrap/
 ```
