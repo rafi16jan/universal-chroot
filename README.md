@@ -79,5 +79,6 @@ Create your first chroot image:
 sudo create-chroot
 ```
 
-Done! Now, everything you want to start your chroot just execute "sudo start-chroot"
+Done! Now, everything you want to start your chroot just execute "sudo start-chroot".
+
 The other scripts is as the name explain their job.
