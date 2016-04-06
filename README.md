@@ -55,7 +55,7 @@ cp -r debian-*/scripts /usr/share/debootstrap/
 Setup scripts:
 
 ```
-#And then navigate to your favorite bin directory
+#Navigate to your favorite bin directory
 cd /usr/local/bin
 #Make a soft link (shortcut) of your scripts file
 ln -s /var/chroot/scripts/* ./ #remember /var/chroot can be different
