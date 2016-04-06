@@ -52,7 +52,7 @@ export dir=/var/chroot/
 #And then navigate to your favorite bin directory
 cd /usr/local/bin
 #Make a soft link (shortcut) of your scripts file
-ln -s /var/chroot/scripts* ./ #remember /var/chroot can be different
+ln -s /var/chroot/scripts/* ./ #remember /var/chroot can be different
 
 mv create-chroot.sh create-chroot
 mv delete-chroot.sh delete-chroot
