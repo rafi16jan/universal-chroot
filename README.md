@@ -40,7 +40,8 @@ apt-get install debootstrap
 #For RHEL
 yum install debootstrap
 
-#For another distro (custom debootstrap build), don't do this if you can install debootstrap with package manager
+#For another distro (custom debootstrap build)
+#Don't do this if you can install debootstrap with package manager
 cd /tmp #navigate to your tmp directory, or Download directory (any directory for trash data)
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/debootstrap.sh
 sh debootstrap.sh
