@@ -1,5 +1,5 @@
 #!/bin/sh -e
-#This script is from the dnscheid crouton git, all appreciation goes to him.
+#This script is from the dnscheid crouton github, all appreciation goes to him.
 
 echo 'Downloading latest debootstrap...' 1>&2
 d='https://anonscm.debian.org/gitweb/?p=d-i/debootstrap.git;a=snapshot;h=HEAD;sf=tgz'
