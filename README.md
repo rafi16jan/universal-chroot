@@ -28,8 +28,18 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts
 ```
 #For Debian based
 apt-get install debootstrap
+
 #For RHEL
 yum install debootstrap
+
+#For another distro (custom build), don't do this if can install debootstrap with package manager
+cd /tmp #navigate to your tmp directory, or Download directory (any directory for trash data)
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/debootstrap.sh
+tar xvf debootstrap.tar.gz
+mkdir /usr/share/debootstrap
+cp debian-*/debootstrap /usr/local/bin/ #or can be your another favorite dir directory
+cp debian-*/functions /usr/share/debootstrap/
+cp -r debian-*/scripts /usr/share/debootstrap/
 ```
 
 If you have a different /var/chroot directory make sure you edit the first line of each chroot scripts to your directory:
