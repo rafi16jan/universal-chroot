@@ -25,6 +25,14 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/stop-chroot.sh
 ```
 
+If you have a different /var/chroot directory make sure you edit the first line of each chroot scripts to your directory:
+```
+#!/bin/sh
+export dir=/var/chroot/
+```
+
+Install debootstrap:
+
 ```
 #For Debian based
 apt-get install debootstrap
@@ -42,11 +50,7 @@ cp debian-*/functions /usr/share/debootstrap/
 cp -r debian-*/scripts /usr/share/debootstrap/
 ```
 
-If you have a different /var/chroot directory make sure you edit the first line of each chroot scripts to your directory:
-```
-#!/bin/sh
-export dir=/var/chroot/
-```
+Setup scripts:
 
 ```
 #And then navigate to your favorite bin directory
@@ -69,7 +73,7 @@ chod a+x start-chroot
 chmod a+x stop-chroot
 ```
 
-Create your first chroot image
+Create your first chroot image:
 ```
 sudo create-chroot
 ```
