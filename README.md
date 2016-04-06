@@ -17,12 +17,12 @@ mkdir /chroot #the chroot environment directory that will be mounted
 
 ```
 cd /var/chroot/scripts #navigate to your scripts directory
-wget https://raw.githubusercontent.com/farrell16jan/universal-chroot/master/scripts/create-chroot.sh
-wget https://raw.githubusercontent.com/farrell16jan/universal-chroot/master/scripts/delete-chroot.sh
-wget https://raw.githubusercontent.com/farrell16jan/universal-chroot/master/scripts/duplicate-chroot.sh
-wget https://raw.githubusercontent.com/farrell16jan/universal-chroot/master/scripts/enter-chroot.sh
-wget https://raw.githubusercontent.com/farrell16jan/universal-chroot/master/scripts/start-chroot.sh
-wget https://raw.githubusercontent.com/farrell16jan/universal-chroot/master/scripts/stop-chroot.sh
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/create-chroot.sh
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/delete-chroot.sh
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/duplicate-chroot.sh
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/enter-chroot.sh
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/start-chroot.sh
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts/stop-chroot.sh
 ```
 
 ```
