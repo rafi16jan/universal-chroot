@@ -13,7 +13,7 @@ mkdir /var/chroot/process #the chroot
 mkdir /chroot #the chroot environment directory that will be mounted
 ```
 
-/var/chroot can be anything, depends on where do you want your chroot images (The directory or partition that have enough free space). For Chrome OS it's best on /home/chronos directory and on Android it's best on /data directory.
+/var/chroot can be anything, depends on where do you want your chroot images (The directory or partition that have enough free space). For Chrome OS it's best on /home/chronos directory and on Android it's best on /sdcard directory.
 
 ```
 cd /var/chroot/scripts #navigate to your scripts directory
