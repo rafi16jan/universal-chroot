@@ -47,9 +47,10 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/deboots
 sh debootstrap.sh
 tar xvf debootstrap.tar.gz
 mkdir /usr/share/debootstrap
-cp debian-*/debootstrap /usr/local/bin/ #or can be your another favorite bin directory
-cp debian-*/functions /usr/share/debootstrap/
-cp -r debian-*/scripts /usr/share/debootstrap/
+cp debootstrap-*/debootstrap /usr/local/bin/ #or can be your another favorite bin directory
+cp debootstrap-*/functions /usr/share/debootstrap/
+cp -r debootstrap-*/scripts /usr/share/debootstrap/
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/pkgdetails -O /usr/share/debootstrap/pkgdetails
 ```
 
 Setup scripts:
@@ -59,6 +60,8 @@ Setup scripts:
 cd /usr/local/bin
 #Make a soft link (shortcut) of your scripts file
 ln -s /var/chroot/scripts/* ./ #remember /var/chroot can be different
+#For Chrome OS and Android (Skip this for another distro, Chrome OS and Android doesn't support executable shortcuts)
+cp /var/chroot/scripts/* ./ #remember /var/chroot can be different
 
 mv create-chroot.sh create-chroot
 mv delete-chroot.sh delete-chroot
@@ -71,8 +74,9 @@ chmod a+x create-chroot
 chmod a+x delete-chroot
 chmod a+x duplicate-chroot
 chmod a+x enter-chroot
-chod a+x start-chroot
+chmod a+x start-chroot
 chmod a+x stop-chroot
+exit #exit from root
 ```
 
 Create your first chroot image:
