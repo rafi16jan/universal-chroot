@@ -51,6 +51,9 @@ cp debootstrap-*/debootstrap /usr/local/bin/ #or can be your another favorite bi
 cp debootstrap-*/functions /usr/share/debootstrap/
 cp -r debootstrap-*/scripts /usr/share/debootstrap/
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/pkgdetails -O /usr/share/debootstrap/pkgdetails
+wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/ar -O /usr/local/bin/ar #your favorite bin directory
+chmod a+x /usr/share/debootstrap/pkgdetails
+chmod a+x /usr/local/bin/ar
 ```
 
 Setup scripts:
