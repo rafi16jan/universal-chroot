@@ -6,14 +6,15 @@ Create your chroot scripts directory
 
 ```
 sudo su #login as root
-mkdir /var/chroot
-mkdir /var/chroot/images #the images directory
-mkdir /var/chroot/scripts #the scripts directory
-mkdir /var/chroot/process #the chroot
-mkdir /chroot #the chroot environment directory that will be mounted
+mkdir /var/chroot #create your chroot directory
+cd /var/chroot #nagivate to your chroot directory
+mkdir images #the images directory
+mkdir scripts #the scripts directory
+mkdir process #the process directory
+mkdir environment #the chroot environment directory that will be mounted
 ```
 
-/var/chroot can be anything, depends on where do you want your chroot images (The directory or partition that have enough free space). For Chrome OS it's best on /home/chronos directory and on Android it's best on /sdcard directory.
+/var/chroot can be anything, depends on where do you want to put your chroot images (The directory or partition that have enough free space). For Chrome OS it's best on /home/chronos directory and on Android it's best on /storage or /data directory.
 
 ```
 cd /var/chroot/scripts #navigate to your scripts directory
@@ -28,7 +29,7 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/scripts
 If you have a different /var/chroot directory make sure you edit the first line of each chroot scripts to your directory:
 ```
 #!/bin/sh
-export dir=/var/chroot/
+export dir=#your custom directory, or just leave it if you want to use /var/chroot
 ```
 
 Install debootstrap:
@@ -47,20 +48,20 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/deboots
 sh debootstrap.sh
 tar xvf debootstrap.tar.gz
 mkdir /usr/share/debootstrap
-cp debootstrap-*/debootstrap /usr/local/bin/ #or can be your another favorite bin directory
+cp debootstrap-*/debootstrap /usr/bin/ #or can be your another favorite bin directory
 cp debootstrap-*/functions /usr/share/debootstrap/
 cp -r debootstrap-*/scripts /usr/share/debootstrap/
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/pkgdetails -O /usr/share/debootstrap/pkgdetails
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/ar -O /usr/local/bin/ar #your favorite bin directory
 chmod a+x /usr/share/debootstrap/pkgdetails
-chmod a+x /usr/local/bin/ar
+chmod a+x /usr/bin/ar
 ```
 
 Setup scripts:
 
 ```
 #Navigate to your favorite bin directory
-cd /usr/local/bin
+cd /usr/bin
 #Make a soft link (shortcut) of your scripts file
 ln -s /var/chroot/scripts/* ./ #remember /var/chroot can be different
 #For Chrome OS and Android (Skip this for another distro, Chrome OS and Android doesn't support executable shortcuts)
