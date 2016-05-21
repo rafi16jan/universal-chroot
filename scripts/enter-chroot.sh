@@ -1,2 +1,3 @@
 #!/bin/sh
-chroot /chroot /bin/su -
+export dir=/var/chroot/
+chroot $dir/chroot/environment /bin/su -
