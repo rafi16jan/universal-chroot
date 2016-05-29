@@ -1,6 +1,6 @@
 #!/bin/sh
 export dir=/var/chroot/
-lsof | grep " $dir/environment/" > $dir/process/1
+lsof | grep "/environment/" > $dir/process/1
 cut -c11-15 $dir/process/1 > $dir/process/2
 uniq $dir/process/2 > $dir/process/3
 echo "
