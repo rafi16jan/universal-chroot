@@ -103,6 +103,6 @@ Create your first chroot image.
 sudo pandoras create-box
 ```
 
-Done! Now, everything you want to start your chroot just execute "sudo pandoras start-box".
+Done! Now, everything you want to start your chroot just execute `sudo pandoras start-box`.
 
 The other scripts is as the name explain their job.
