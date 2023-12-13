@@ -1,5 +1,4 @@
 # Ignore files individually
-.shellcheckrc
 package.json
 
 # Ignore node directories
