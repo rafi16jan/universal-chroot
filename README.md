@@ -50,7 +50,7 @@ export dir=#your custom directory, or just leave it if you want to use /var/chro
 For Debian based distributions, run:
 
 ```shell
-apt get update
+apt-get update
 apt-get install debootstrap
 ```
 
@@ -100,7 +100,7 @@ a+x: This part specifies the change to be made. Here, a refers to "all users," a
 Create your first chroot image.
 
 ```
-sudo create-chroot
+sudo create-box
 ```
 
 Done! Now, everything you want to start your chroot just execute "sudo pandoras start-box".

@@ -175,7 +175,10 @@ chroot $dir/environment /bin/su -
 
 # Lists all the chroots
 list_boxes() {
-
+export dir=/var/chroot/
+echo "Your chroot images:
+$(ls $dir/images/ | sed 's/.img//g')
+"
 }
 
 # Routes options
