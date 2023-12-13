@@ -41,6 +41,7 @@ If you want to have a chroot directory instead of /var/pandoras make sure you ed
 #!/bin/env bash
 export dir=#your custom directory, or just leave it if you want to use /var/chroot
 ```
+Keep in mind that the availability and functionality of Bash may vary based on the specific device, Android version, or Chromebook model you are using.
 
 ## Install Debootstrap
 
