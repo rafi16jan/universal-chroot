@@ -1,3 +1,5 @@
+[![Shell Linter](https://github.com/estebanways/pandoras/actions/workflows/shell-linter.yml/badge.svg)](https://github.com/estebanways/pandoras/actions/workflows/shell-linter.yml)
+
 # Pandoras
 
 Universal Chroot environment that can be deployed to most linux distros and with a portable chroot image that can be moved to one host to another.
