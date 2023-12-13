@@ -1,6 +1,7 @@
 # Ignore files individually
 .shellcheckrc
+.package.json
 
 # Ignore node directories
-node_modules/
+#node_modules/
 
