@@ -1,0 +1,6 @@
+# Ignore files individually
+.shellcheckrc
+
+# Ignore node directories
+node_modules/
+
