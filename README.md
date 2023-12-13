@@ -100,7 +100,7 @@ a+x: This part specifies the change to be made. Here, a refers to "all users," a
 Create your first chroot image.
 
 ```
-sudo create-box
+sudo pandoras create-box
 ```
 
 Done! Now, everything you want to start your chroot just execute "sudo pandoras start-box".
