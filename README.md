@@ -28,13 +28,10 @@ git clone git@github.com:estebanways/pandoras.git
 
 This is going to create the directories:
 
-/var/pandoras: Your chroot directory.
-
-/var/pandoras/images: The images directory.
-
-/var/pandoras/process: The process directory.
-
-/var/pandoras/environment: The chroot environment directory that will be mounted.
+`/var/pandoras`: Your chroot directory.
+`/var/pandoras/images`: The images directory.
+`/var/pandoras/process`: The process directory.
+`/var/pandoras/environment`: The chroot environment directory that will be mounted.
 
 If you want to have a chroot directory instead of /var/pandoras make sure you edit the Pandoras script to your directory.
 
