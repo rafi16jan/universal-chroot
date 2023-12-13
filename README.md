@@ -92,7 +92,7 @@ chmod a+x pandoras
 exit  # Exit from root
 ```
 
-a+x: This part specifies the change to be made. Here, a refers to "all users," and +x means to add the execute permission.
+`a+x`: This part specifies the change to be made. Here, a refers to "all users," and +x means to add the execute permission.
 
 Create your first chroot image.
 
