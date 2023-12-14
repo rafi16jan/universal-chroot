@@ -80,13 +80,12 @@ cd /usr/bin
 
 Make a soft link (shortcut) of your scripts file.
 
-```
-ln -s /var/pandoras/pandoras.sh ./pandoras  # Remember /var/pandoras can be different
-chmod a+x pandoras
-exit  # Exit from root
+```shell
+sudo ln -s /var/pandoras/pandoras.sh ./pandoras  # Remember /var/pandoras can be different
+ls -l pandoras
 ```
 
-`a+x`: This part specifies the change to be made. Here, a refers to "all users," and +x means to add the execute permission.
+Symbolic links (symlinks) in Linux always appear with the permissions lrwxrwxrwx, which means they are read, write, and execute for all users, but it doesn't represent the actual permissions of the target file or directory. The permissions of the symlink itself are not relevant in terms of access control.
 
 Create your first chroot image.
 
