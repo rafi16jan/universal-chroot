@@ -69,6 +69,7 @@ wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/deboots
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/ar -O /usr/local/bin/ar # Your favorite bin directory
 chmod a+x /usr/share/debootstrap/pkgdetails
 chmod a+x /usr/bin/ar
+exit  # exit the root user
 ```
 
 ## Setup the Pandoras script
