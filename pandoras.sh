@@ -84,7 +84,7 @@ Boxes Options:
 Other Options:
 	-g, --license		Print the GPL license notification
 	-h, --help		Print this Help
-	-V, -v, --version		Print software version and exit
+	-V, -v, --version	Print software version and exit
 
 EOT
 }
