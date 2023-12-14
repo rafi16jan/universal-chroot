@@ -32,7 +32,7 @@
 
 # Duplicates chroot
 duplicate_box() {
-  
+
   export dir=/var/pandoras/
 
   echo "Your chroot images:

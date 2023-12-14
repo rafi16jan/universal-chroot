@@ -100,8 +100,6 @@ route_option() {
 	# Path to functions
 	export dir=/var/pandoras/includes
 
-	#command="$1 ""$2";
-
 	case "$1" in
 
 		'start-box')

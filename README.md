@@ -4,28 +4,17 @@
 
 Universal Chroot environment that can be deployed to most linux distros and with a portable chroot image that can be moved to one host to another.
 
-<img alt="sword-vim" src="./images/pandoras.jpg?raw=true" width="500" height="320" />
+<img alt="sword-vim" src="./pandoras.jpg?raw=true" width="500" height="320" />
 
 ## Build a Chroot Management System
 
 ### Create your chroot directory
 
-Login as root.
-
 ```shell
-sudo su -
-```
-
-Navigate to your /var directory.
-
-```shell
-cd /var
-```
-
-Create the Pandoras directories.
-
-```
-git clone git@github.com:estebanways/pandoras.git
+cd
+git clone git@github.com:estebanways/pandoras.git 
+sudo chown -R root:root pandoras/
+sudo mv pandoras /var 
 ```
 
 This is going to create the directories:
@@ -35,7 +24,7 @@ This is going to create the directories:
 <br />`/var/pandoras/process`: The process directory.
 <br />`/var/pandoras/environment`: The chroot environment directory that will be mounted.
 
-If you want to have a chroot directory instead of /var/pandoras make sure you edit the Pandoras script to your directory.
+If you want to have a chroot directory instead of /var/pandoras make sure you edit the Pandoras scripts to your directory.
 
 /var/pandoras can be anything, depends on where you do want to put your chroot images (The directory or partition that have enough free space). For Chrome OS it's best on /home/chronos directory and on Android it's best on /storage or /data directory.
 
@@ -43,6 +32,7 @@ If you want to have a chroot directory instead of /var/pandoras make sure you ed
 #!/bin/env bash
 export dir=#your custom directory, or just leave it if you want to use /var/chroot
 ```
+
 Keep in mind that the availability and functionality of Bash may vary based on the specific device, Android version, or Chromebook model you are using.
 
 ## Install Debootstrap
