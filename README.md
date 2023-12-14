@@ -4,7 +4,7 @@
 
 Universal Chroot environment that can be deployed to most linux distros and with a portable chroot image that can be moved to one host to another.
 
-<img alt="sword-vim" src="./pandoras.jpg?raw=true" width="500" height="320" />
+<img alt="sword-vim" src="./images/pandoras.jpg?raw=true" width="500" height="320" />
 
 ## Build a Chroot Management System
 
@@ -40,14 +40,15 @@ Keep in mind that the availability and functionality of Bash may vary based on t
 For Debian based distributions, run:
 
 ```shell
-apt-get update
-apt-get install debootstrap
+sudo apt-get update
+sudo apt-get install debootstrap
 ```
 
 For RHEL, do run:
 
 ```shell
-yum install debootstrap
+sudo yum install debootstrap
+sudo dnf install debootstrap
 ```
 
 For another distro (custom debootstrap build):
