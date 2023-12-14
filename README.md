@@ -56,6 +56,7 @@ For another distro (custom debootstrap build):
 Don't do this if you can install debootstrap with package manager.
 
 ```shell
+sudo su -  # As root user
 cd /tmp  # Navigate to your tmp directory, or Download directory (any directory for trash data)
 wget https://raw.githubusercontent.com/rafi16jan/universal-chroot/master/debootstrap/debootstrap.sh
 sh debootstrap.sh
